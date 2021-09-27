@@ -55,13 +55,23 @@ return require('packer').startup(function()
   use {'hrsh7th/vim-vsnip-integ'}
   use {'rafamadriz/friendly-snippets'}
 
-  use {'nvim-treesitter/nvim-treesitter', run=function() vim.cmd(":TSUpdate") end}
+  use 
+  {
+    'nvim-treesitter/nvim-treesitter', run=function() vim.cmd(":TSUpdate") end,
+     setup = require("plugins.plugin_configs.treesitter"),
+  }
+
+  use 
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    setup = require("plugins.plugin_configs.indent-line"),
+  }
 
   use 
   {
     'akinsho/nvim-bufferline.lua', 
     require = 'kyazdani42/nvim-web-devicons',
-    config = function() require("bufferline").setup{} end,
+    setup = require("plugins.plugin_configs.bufferline"),
   }
 
   use 
@@ -70,7 +80,8 @@ return require('packer').startup(function()
     setup = require 'colorizer'.setup(),
   }
 
-  use {
+  use 
+  {
     "tpope/vim-commentary",
   }
 

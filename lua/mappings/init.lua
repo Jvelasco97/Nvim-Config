@@ -22,5 +22,11 @@ map("n", "<C-n>", ":NvimTreeFocus <CR>")
 map("n", "<leader>/", ":Commentary <CR>")
 map("v", "<leader>/", ":Commentary <CR>")
 
-map("i", "<Tab>", "<Down>")
-map("i", "<S-Tab>", "<Up>")
+map("n", "<esc><esc>", ":noh <CR>")
+
+map("n", "<Tab>", ":BufferLineCycleNext <CR>")
+map("n", "<S-Tab>", ":BufferLineCyclePrev <CR>")
+map("n", "<S-x>", ":bdelete <CR>")
+
+map("i", "<C-a>", "<Down>")
+map("i", "<C-q>", "<Up>")
