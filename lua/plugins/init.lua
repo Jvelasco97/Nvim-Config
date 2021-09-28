@@ -37,7 +37,7 @@ return require('packer').startup(function()
   use 
   { 
     'karb94/neoscroll.nvim',
-     setup = require("plugins.plugin_configs.neoscroll"),
+     config = require("plugins.plugin_configs.neoscroll"),
      opt = false,
   }
 
@@ -58,26 +58,26 @@ return require('packer').startup(function()
   use 
   {
     'nvim-treesitter/nvim-treesitter', run=function() vim.cmd(":TSUpdate") end,
-     setup = require("plugins.plugin_configs.treesitter"),
+     config = require("plugins.plugin_configs.treesitter"),
   }
 
   use 
   {
     "lukas-reineke/indent-blankline.nvim",
-    setup = require("plugins.plugin_configs.indent-line"),
+    config = require("plugins.plugin_configs.indent-line"),
   }
 
   use 
   {
     'akinsho/nvim-bufferline.lua', 
     require = 'kyazdani42/nvim-web-devicons',
-    setup = require("plugins.plugin_configs.bufferline"),
+    config = require("plugins.plugin_configs.bufferline"),
   }
 
   use 
   {
     'norcalli/nvim-colorizer.lua',
-    setup = require 'colorizer'.setup(),
+    config = require 'colorizer'.setup(),
   }
 
   use 
