@@ -73,9 +73,21 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/xerothyl/.local/share/nvim/site/pack/packer/start/doom-one.vim"
   },
+  ["emmet-vim"] = {
+    loaded = true,
+    path = "/home/xerothyl/.local/share/nvim/site/pack/packer/start/emmet-vim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/xerothyl/.local/share/nvim/site/pack/packer/start/friendly-snippets"
+  },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/home/xerothyl/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim"
+  },
+  ["neoscroll.nvim"] = {
+    loaded = true,
+    path = "/home/xerothyl/.local/share/nvim/site/pack/packer/start/neoscroll.nvim"
   },
   ["nvim-autopairs"] = {
     loaded = true,
@@ -99,7 +111,6 @@ _G.packer_plugins = {
   },
   ["nvim-tree.lua"] = {
     commands = { "NvimTreeToggle", "NvimTreeFocus" },
-    config = { "\27LJ\1\2;\0\0\2\0\3\0\a4\0\0\0%\1\1\0>\0\2\0027\0\2\0002\1\0\0>\0\2\1G\0\1\0\nsetup\14nvim-tree\frequire\0" },
     loaded = false,
     needs_bufread = false,
     path = "/home/xerothyl/.local/share/nvim/site/pack/packer/opt/nvim-tree.lua"
@@ -128,6 +139,10 @@ _G.packer_plugins = {
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/xerothyl/.local/share/nvim/site/pack/packer/start/telescope.nvim"
+  },
+  ["vim-commentary"] = {
+    loaded = true,
+    path = "/home/xerothyl/.local/share/nvim/site/pack/packer/start/vim-commentary"
   },
   ["vim-vsnip"] = {
     loaded = true,

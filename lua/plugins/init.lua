@@ -20,6 +20,11 @@ return require('packer').startup(function()
     config = require("plugins.plugin_configs.nvim-compe"),
   }
 
+  use
+  {
+    'nvim-lua/completion-nvim'
+  }
+
   -- Insert or delete brackets, parens, quotes in pair.
   use
   {
