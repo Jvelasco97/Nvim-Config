@@ -85,4 +85,9 @@ return require('packer').startup(function()
     "tpope/vim-commentary",
   }
 
+  use
+  {
+    "mattn/emmet-vim"
+  }
+
 end)
