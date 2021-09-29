@@ -46,6 +46,8 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"
 ```
 
+Make sure you have a `~/.vsnip/global.json` file  
+
 ![showcase1](showcase/showcase-1.png)
 ![showcase2](showcase/showcase-2.png)
 ![showcase3](showcase/showcase-3.png)
