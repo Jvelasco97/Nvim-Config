@@ -3,6 +3,11 @@ vim.cmd('packadd packer.nvim')         -- Load package manager
 return require('packer').startup(function()
     -- Packer can manage itself as an optional plugin
 
+  use
+  {
+    'nvim-lua/plenary.nvim'
+  }
+
   use 
   {
     'wbthomason/packer.nvim', opt = true
@@ -16,13 +21,8 @@ return require('packer').startup(function()
 
   use 
   {
-    'hrsh7th/nvim-compe',
-    config = require("plugins.plugin_configs.nvim-compe"),
-  }
-
-  use
-  {
-    'nvim-lua/completion-nvim'
+    'hrsh7th/nvim-cmp',
+    config = require("plugins.plugin_configs.nvim-cmp"),
   }
 
   -- Insert or delete brackets, parens, quotes in pair.
@@ -57,8 +57,9 @@ return require('packer').startup(function()
   use {'kyazdani42/nvim-web-devicons'}
 
   use {'hrsh7th/vim-vsnip'}
+  use {'hrsh7th/cmp-vsnip'}
+  use {'hrsh7th/cmp-nvim-lsp'}
   use {'hrsh7th/vim-vsnip-integ'}
-  use {'rafamadriz/friendly-snippets'}
 
   use 
   {
@@ -94,5 +95,4 @@ return require('packer').startup(function()
   {
     "mattn/emmet-vim"
   }
-
 end)
