@@ -59,6 +59,7 @@ return require('packer').startup(function()
   use {'hrsh7th/vim-vsnip'}
   use {'hrsh7th/cmp-vsnip'}
   use {'hrsh7th/cmp-nvim-lsp'}
+  use {'hrsh7th/cmp-buffer'}
   use {'hrsh7th/vim-vsnip-integ'}
 
   use 
@@ -95,4 +96,25 @@ return require('packer').startup(function()
   {
     "mattn/emmet-vim"
   }
+  use 
+  {
+    'kristijanhusak/orgmode.nvim', 
+    config = function()
+      require('orgmode').setup({
+	      org_agenda_files = {'~/Dropbox/org/*', '~/my-orgs/**/*'},
+	      org_default_notes_file = '~/Dropbox/org/refile.org',
+      })
+    end
+  }
+
+  use {"akinsho/org-bullets.nvim", config = function()
+    require("org-bullets").setup {
+      symbols = { "◉", "○", "✸", "✿" },
+      -- or a function that receives the defaults and returns a list
+      symbols = function(default_list)
+	table.insert(default_list, "♥")
+	return default_list
+      end
+    }
+  end}
 end)

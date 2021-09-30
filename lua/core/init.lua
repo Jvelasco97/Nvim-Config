@@ -9,6 +9,7 @@ opt.ignorecase = true
 opt.smartindent = true
 opt.numberwidth = 2
 opt.shiftwidth = 2
+opt.colorcolumn= '80'
 
 opt.list = true
 opt.listchars = {
