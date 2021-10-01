@@ -34,10 +34,4 @@ vim.cmd('command CppBoiler execute ":put =readfile(\'/home/xerothyl/.config/nvim
 vim.cmd('command CBoiler execute ":put =readfile(\'/home/xerothyl/.config/nvim/boiler_plates/c_boiler\')"')
 vim.cmd('command HBoiler execute ":put =readfile(\'/home/xerothyl/.config/nvim/boiler_plates/h_boiler\')"')
 
--- vim.cmd('inoremap <silent><expr> <C-Space> compe#complete()')
--- vim.cmd('inoremap <silent><expr> <CR>      compe#confirm(\'<CR>\')')
--- vim.cmd('inoremap <silent><expr> <C-e>     compe#close(\'<C-e>\')')
--- vim.cmd('inoremap <silent><expr> <C-f>     compe#scroll({ \'delta\': +4 })')
--- vim.cmd('inoremap <silent><expr> <C-d>     compe#scroll({ \'delta\': -4 })')
-
 vim.cmd('colorscheme doom-one')

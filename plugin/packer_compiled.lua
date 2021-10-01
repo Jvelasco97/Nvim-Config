@@ -73,17 +73,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/xerothyl/.local/share/nvim/site/pack/packer/start/doom-one.vim"
   },
-  ["emmet-vim"] = {
+  ["headlines.nvim"] = {
+    config = { "\27LJ\1\2�\6\0\0\4\0\17\0\0234\0\0\0%\1\1\0>\0\2\0027\0\2\0003\1\6\0003\2\3\0003\3\4\0:\3\5\2:\2\a\0013\2\b\0003\3\t\0:\3\5\2:\2\n\0013\2\v\0003\3\f\0:\3\5\2:\2\r\0013\2\14\0003\3\15\0:\3\5\2:\2\16\1>\0\2\1G\0\1\0\borg\1\2\0\0\rHeadline\1\0\6\21headline_pattern\t^%*+\25source_pattern_start)#%+[bB][eE][gG][iI][nN]_[sS][rR][cC]\19codeblock_sign\14CodeBlock\19dash_highlight\tDash\23source_pattern_end!#%+[eE][nN][dD]_[sS][rR][cC]\17dash_pattern\r^-----+$\fvimwiki\1\2\0\0\rHeadline\1\0\6\21headline_pattern\b^=+\25source_pattern_start\f^{{{%a+\19codeblock_sign\14CodeBlock\19dash_highlight\tDash\23source_pattern_end\n^}}}$\17dash_pattern\v^---+$\brmd\1\2\0\0\rHeadline\1\0\6\21headline_pattern\b^#+\25source_pattern_start\t^```\19codeblock_sign\14CodeBlock\19dash_highlight\tDash\23source_pattern_end\n^```$\17dash_pattern\v^---+$\rmarkdown\1\0\0\19headline_signs\1\2\0\0\rHeadline\1\0\6\21headline_pattern\b^#+\25source_pattern_start\t^```\19codeblock_sign\14CodeBlock\19dash_highlight\tDash\23source_pattern_end\n^```$\17dash_pattern\v^---+$\nsetup\14headlines\frequire\0" },
     loaded = true,
-    path = "/home/xerothyl/.local/share/nvim/site/pack/packer/start/emmet-vim"
-  },
-  ["friendly-snippets"] = {
-    loaded = true,
-    path = "/home/xerothyl/.local/share/nvim/site/pack/packer/start/friendly-snippets"
-  },
-  ["indent-blankline.nvim"] = {
-    loaded = true,
-    path = "/home/xerothyl/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim"
+    path = "/home/xerothyl/.local/share/nvim/site/pack/packer/start/headlines.nvim"
   },
   ["neoscroll.nvim"] = {
     loaded = true,
@@ -93,17 +86,9 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/xerothyl/.local/share/nvim/site/pack/packer/start/nvim-autopairs"
   },
-  ["nvim-bufferline.lua"] = {
+  ["nvim-cmp"] = {
     loaded = true,
-    path = "/home/xerothyl/.local/share/nvim/site/pack/packer/start/nvim-bufferline.lua"
-  },
-  ["nvim-colorizer.lua"] = {
-    loaded = true,
-    path = "/home/xerothyl/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua"
-  },
-  ["nvim-compe"] = {
-    loaded = true,
-    path = "/home/xerothyl/.local/share/nvim/site/pack/packer/start/nvim-compe"
+    path = "/home/xerothyl/.local/share/nvim/site/pack/packer/start/nvim-cmp"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -115,13 +100,15 @@ _G.packer_plugins = {
     needs_bufread = false,
     path = "/home/xerothyl/.local/share/nvim/site/pack/packer/opt/nvim-tree.lua"
   },
-  ["nvim-treesitter"] = {
+  ["org-bullets.nvim"] = {
+    config = { "\27LJ\1\0020\0\1\4\0\3\0\0064\1\0\0007\1\1\1\16\2\0\0%\3\2\0>\1\3\1H\0\2\0\b♥\vinsert\ntablem\1\0\3\0\a\0\v4\0\0\0%\1\1\0>\0\2\0027\0\2\0003\1\4\0003\2\3\0:\2\5\0011\2\6\0:\2\5\1>\0\2\1G\0\1\0\0\fsymbols\1\0\0\1\5\0\0\b◉\b○\b✸\b✿\nsetup\16org-bullets\frequire\0" },
     loaded = true,
-    path = "/home/xerothyl/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
+    path = "/home/xerothyl/.local/share/nvim/site/pack/packer/start/org-bullets.nvim"
   },
-  ["nvim-web-devicons"] = {
+  ["orgmode.nvim"] = {
+    config = { "\27LJ\1\0025\0\0\2\0\3\0\0064\0\0\0%\1\1\0>\0\2\0027\0\2\0>\0\1\1G\0\1\0\nsetup\forgmode\frequire\0" },
     loaded = true,
-    path = "/home/xerothyl/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
+    path = "/home/xerothyl/.local/share/nvim/site/pack/packer/start/orgmode.nvim"
   },
   ["packer.nvim"] = {
     loaded = false,
@@ -139,22 +126,22 @@ _G.packer_plugins = {
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/xerothyl/.local/share/nvim/site/pack/packer/start/telescope.nvim"
-  },
-  ["vim-commentary"] = {
-    loaded = true,
-    path = "/home/xerothyl/.local/share/nvim/site/pack/packer/start/vim-commentary"
-  },
-  ["vim-vsnip"] = {
-    loaded = true,
-    path = "/home/xerothyl/.local/share/nvim/site/pack/packer/start/vim-vsnip"
-  },
-  ["vim-vsnip-integ"] = {
-    loaded = true,
-    path = "/home/xerothyl/.local/share/nvim/site/pack/packer/start/vim-vsnip-integ"
   }
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: headlines.nvim
+time([[Config for headlines.nvim]], true)
+try_loadstring("\27LJ\1\2�\6\0\0\4\0\17\0\0234\0\0\0%\1\1\0>\0\2\0027\0\2\0003\1\6\0003\2\3\0003\3\4\0:\3\5\2:\2\a\0013\2\b\0003\3\t\0:\3\5\2:\2\n\0013\2\v\0003\3\f\0:\3\5\2:\2\r\0013\2\14\0003\3\15\0:\3\5\2:\2\16\1>\0\2\1G\0\1\0\borg\1\2\0\0\rHeadline\1\0\6\21headline_pattern\t^%*+\25source_pattern_start)#%+[bB][eE][gG][iI][nN]_[sS][rR][cC]\19codeblock_sign\14CodeBlock\19dash_highlight\tDash\23source_pattern_end!#%+[eE][nN][dD]_[sS][rR][cC]\17dash_pattern\r^-----+$\fvimwiki\1\2\0\0\rHeadline\1\0\6\21headline_pattern\b^=+\25source_pattern_start\f^{{{%a+\19codeblock_sign\14CodeBlock\19dash_highlight\tDash\23source_pattern_end\n^}}}$\17dash_pattern\v^---+$\brmd\1\2\0\0\rHeadline\1\0\6\21headline_pattern\b^#+\25source_pattern_start\t^```\19codeblock_sign\14CodeBlock\19dash_highlight\tDash\23source_pattern_end\n^```$\17dash_pattern\v^---+$\rmarkdown\1\0\0\19headline_signs\1\2\0\0\rHeadline\1\0\6\21headline_pattern\b^#+\25source_pattern_start\t^```\19codeblock_sign\14CodeBlock\19dash_highlight\tDash\23source_pattern_end\n^```$\17dash_pattern\v^---+$\nsetup\14headlines\frequire\0", "config", "headlines.nvim")
+time([[Config for headlines.nvim]], false)
+-- Config for: org-bullets.nvim
+time([[Config for org-bullets.nvim]], true)
+try_loadstring("\27LJ\1\0020\0\1\4\0\3\0\0064\1\0\0007\1\1\1\16\2\0\0%\3\2\0>\1\3\1H\0\2\0\b♥\vinsert\ntablem\1\0\3\0\a\0\v4\0\0\0%\1\1\0>\0\2\0027\0\2\0003\1\4\0003\2\3\0:\2\5\0011\2\6\0:\2\5\1>\0\2\1G\0\1\0\0\fsymbols\1\0\0\1\5\0\0\b◉\b○\b✸\b✿\nsetup\16org-bullets\frequire\0", "config", "org-bullets.nvim")
+time([[Config for org-bullets.nvim]], false)
+-- Config for: orgmode.nvim
+time([[Config for orgmode.nvim]], true)
+try_loadstring("\27LJ\1\0025\0\0\2\0\3\0\0064\0\0\0%\1\1\0>\0\2\0027\0\2\0>\0\1\1G\0\1\0\nsetup\forgmode\frequire\0", "config", "orgmode.nvim")
+time([[Config for orgmode.nvim]], false)
 
 -- Command lazy-loads
 time([[Defining lazy-load commands]], true)

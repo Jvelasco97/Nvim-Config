@@ -24,8 +24,8 @@ map("v", "<leader>/", ":Commentary <CR>")
 
 map("n", "<esc><esc>", ":noh <CR>")
 
-map("n", "<Tab>", ":BufferLineCycleNext <CR>")
-map("n", "<S-Tab>", ":BufferLineCyclePrev <CR>")
+map("n", "<S-n>", ":BufferLineCycleNext <CR>")
+map("n", "<S-b>", ":BufferLineCyclePrev <CR>")
 map("n", "<S-x>", ":bdelete <CR>")
 
 map("i", "<C-a>", "<Down>")

@@ -25,25 +25,25 @@ return require('packer').startup(function()
     config = require("plugins.plugin_configs.nvim-cmp"),
   }
 
-  -- Insert or delete brackets, parens, quotes in pair.
+  --Insert or delete brackets, parens, quotes in pair.
   use
   {
     'windwp/nvim-autopairs',
     setup = require('nvim-autopairs').setup{},
   }
 
-  use 
-  {
-    "kyazdani42/nvim-tree.lua",
-    cmd = { "NvimTreeToggle", "NvimTreeFocus" },
-    config = function() require'nvim-tree'.setup {} end,
-  }
+   use 
+   {
+     "kyazdani42/nvim-tree.lua",
+     cmd = { "NvimTreeToggle", "NvimTreeFocus" },
+     config = function() require'nvim-tree'.setup {} end,
+   }
 
   use 
   { 
     'karb94/neoscroll.nvim',
-     config = require("plugins.plugin_configs.neoscroll"),
-     opt = false,
+    config = require("plugins.plugin_configs.neoscroll"),
+    opt = false,
   }
 
   use 
@@ -65,13 +65,13 @@ return require('packer').startup(function()
   use 
   {
     'nvim-treesitter/nvim-treesitter', run=function() vim.cmd(":TSUpdate") end,
-     config = require("plugins.plugin_configs.treesitter"),
+    config = require("plugins.plugin_configs.treesitter"),
   }
 
   use 
   {
     "lukas-reineke/indent-blankline.nvim",
-     config = require("plugins.plugin_configs.indent-line"),
+    config = require("plugins.plugin_configs.indent-line"),
   }
 
   use 
@@ -96,16 +96,12 @@ return require('packer').startup(function()
   {
     "mattn/emmet-vim"
   }
-  use 
-  {
-    'kristijanhusak/orgmode.nvim', 
-    config = function()
-      require('orgmode').setup({
-	      org_agenda_files = {'~/Dropbox/org/*', '~/my-orgs/**/*'},
-	      org_default_notes_file = '~/Dropbox/org/refile.org',
-      })
-    end
-  }
+
+  use {'kristijanhusak/orgmode.nvim',
+      config = function()
+        require('orgmode').setup()
+      end
+      }
 
   use {"akinsho/org-bullets.nvim", config = function()
     require("org-bullets").setup {
@@ -117,4 +113,49 @@ return require('packer').startup(function()
       end
     }
   end}
+
+	use {
+	  'lukas-reineke/headlines.nvim',
+	  config = function()
+	    require('headlines').setup{
+    markdown = {
+        source_pattern_start = "^```",
+        source_pattern_end = "^```$",
+        dash_pattern = "^---+$",
+        headline_pattern = "^#+",
+        headline_signs = { "Headline" },
+        codeblock_sign = "CodeBlock",
+        dash_highlight = "Dash",
+    },
+    rmd = {
+        source_pattern_start = "^```",
+        source_pattern_end = "^```$",
+        dash_pattern = "^---+$",
+        headline_pattern = "^#+",
+        headline_signs = { "Headline" },
+        codeblock_sign = "CodeBlock",
+        dash_highlight = "Dash",
+    },
+    vimwiki = {
+        source_pattern_start = "^{{{%a+",
+        source_pattern_end = "^}}}$",
+        dash_pattern = "^---+$",
+        headline_pattern = "^=+",
+        headline_signs = { "Headline" },
+        codeblock_sign = "CodeBlock",
+        dash_highlight = "Dash",
+    },
+    org = {
+        source_pattern_start = "#%+[bB][eE][gG][iI][nN]_[sS][rR][cC]",
+        source_pattern_end = "#%+[eE][nN][dD]_[sS][rR][cC]",
+        dash_pattern = "^-----+$",
+        headline_pattern = "^%*+",
+        headline_signs = { "Headline" },
+        codeblock_sign = "CodeBlock",
+        dash_highlight = "Dash",
+    },
+	    }
+
+	  end,
+	}
 end)
